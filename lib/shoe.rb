@@ -1,17 +1,15 @@
-require 'pry'
+require "pry"
 class Shoe 
-    attr_accessor :brand, :color, :size, :material, :condition 
-
-    def initialize(brand) 
+    attr_accessor :brand, :color, :size, :condition, :material 
+    def initialize(brand)
         @brand = brand 
+        
     end 
 
-    def cobbler
-        @condition = repaired 
+    def cobble
+      puts "Your shoe is as good as new!"
+      @condition = "new"
     end 
 
-    def cobbler(condition)
-        @condition = new 
-    end 
     
-end 
+end
